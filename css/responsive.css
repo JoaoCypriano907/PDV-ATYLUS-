@@ -399,20 +399,42 @@
     border-radius: 16px;
   }
 
-  /* Depoimentos */
+  /* Depoimentos — Carrossel Mobile */
   .testimonials-section {
-    padding: 55px 0 65px;
+    padding: 50px 0 60px;
+    overflow: hidden;
   }
 
   .testimonials-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-    margin-top: 32px;
+    display: flex !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 14px;
+    padding: 10px 4px 18px;
+    margin-top: 24px;
+    scrollbar-width: none;
+  }
+
+  .testimonials-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .testimonial-card {
-    padding: 22px 18px;
-    border-radius: 16px;
+    flex: 0 0 86% !important;
+    min-width: 86% !important;
+    max-width: 86% !important;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    padding: 24px 20px;
+    border-radius: 18px;
+    border: 1.5px solid #e2e8f0;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+  }
+
+  .testimonial-carousel-controls {
+    display: flex !important;
   }
 
   /* Oferta & Teste Grátis */
@@ -462,14 +484,24 @@
     font-size: 0.88rem;
   }
 
-  /* Footer */
+  /* Footer Mobile — Ocultar as 2 seções indicadas pelo usuário (Brand Info & Navegação) */
   .site-footer {
-    padding: 50px 0 25px;
+    padding: 45px 0 25px;
+  }
+
+  .footer-brand-info,
+  .footer-col-nav {
+    display: none !important;
   }
 
   .footer-columns-grid {
     grid-template-columns: 1fr;
-    gap: 26px;
+    gap: 28px;
+  }
+
+  .footer-col-sistema,
+  .footer-col-contato {
+    display: block !important;
   }
 
   .footer-bottom-bar {

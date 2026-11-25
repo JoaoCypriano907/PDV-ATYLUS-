@@ -1291,6 +1291,17 @@
           </div>
         </div>
       </div>
+
+      <!-- Controles do Carrossel Mobile -->
+      <div class="testimonial-carousel-controls">
+        <button type="button" class="t-arrow t-prev" aria-label="Depoimento anterior" onclick="slideTestimonial(-1)">‹</button>
+        <div class="t-dots">
+          <button type="button" class="t-dot active" aria-label="Depoimento 1" onclick="goToTestimonial(0)"></button>
+          <button type="button" class="t-dot" aria-label="Depoimento 2" onclick="goToTestimonial(1)"></button>
+          <button type="button" class="t-dot" aria-label="Depoimento 3" onclick="goToTestimonial(2)"></button>
+        </div>
+        <button type="button" class="t-arrow t-next" aria-label="Próximo depoimento" onclick="slideTestimonial(1)">›</button>
+      </div>
     </div>
   </section>
 
@@ -1569,8 +1580,8 @@
           </span>
         </div>
 
-        <!-- Links 1 -->
-        <div>
+        <!-- Links 1 (Navegação — oculto no mobile conforme solicitado) -->
+        <div class="footer-col-nav">
           <h4 class="footer-col-title">Navegação</h4>
           <ul class="footer-links-list">
             <li><a href="#como-funciona">Como funciona</a></li>
@@ -1583,8 +1594,8 @@
           </ul>
         </div>
 
-        <!-- Links 2 -->
-        <div>
+        <!-- Links 2 (Sistema) -->
+        <div class="footer-col-sistema">
           <h4 class="footer-col-title">Sistema</h4>
           <ul class="footer-links-list">
             <li><a href="#inicio">Frente de Caixa (PDV)</a></li>
@@ -1596,7 +1607,7 @@
         </div>
 
         <!-- Links 3 / Atendimento -->
-        <div>
+        <div class="footer-col-contato">
           <h4 class="footer-col-title">Contato Oficial</h4>
           <ul class="footer-links-list">
             <li><strong style="color: var(--text-main);">WhatsApp:</strong> (21) 97315-8363</li>
@@ -1747,6 +1758,62 @@
       }
     }
     window.toggleSegmentDrawer = toggleSegmentDrawer;
+
+    // Testimonials Mobile Carousel Controls
+    function getTestimonialsTrack() {
+      return document.querySelector('.testimonials-grid');
+    }
+
+    function slideTestimonial(direction) {
+      const track = getTestimonialsTrack();
+      if (!track) return;
+      const card = track.querySelector('.testimonial-card');
+      if (!card) return;
+      const cardWidth = card.offsetWidth + 14;
+      track.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+    }
+    window.slideTestimonial = slideTestimonial;
+
+    function goToTestimonial(index) {
+      const track = getTestimonialsTrack();
+      if (!track) return;
+      const cards = track.querySelectorAll('.testimonial-card');
+      if (!cards[index]) return;
+      const cardWidth = cards[0].offsetWidth + 14;
+      track.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
+    }
+    window.goToTestimonial = goToTestimonial;
+
+    function initTestimonialsCarousel() {
+      const track = getTestimonialsTrack();
+      if (!track) return;
+      const dots = document.querySelectorAll('.t-dot');
+      if (!dots.length) return;
+
+      track.addEventListener('scroll', () => {
+        const cards = track.querySelectorAll('.testimonial-card');
+        if (!cards.length) return;
+        const scrollLeft = track.scrollLeft;
+        const cardWidth = cards[0].offsetWidth + 14;
+        const activeIndex = Math.min(
+          cards.length - 1,
+          Math.max(0, Math.round(scrollLeft / cardWidth))
+        );
+        dots.forEach((dot, idx) => {
+          if (idx === activeIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }, { passive: true });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initTestimonialsCarousel);
+    } else {
+      initTestimonialsCarousel();
+    }
 
     // Bind modal triggers
     document.querySelectorAll('[data-open-modal]').forEach(el => {
