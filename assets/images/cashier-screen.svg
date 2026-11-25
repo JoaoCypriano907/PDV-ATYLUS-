@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="bgCash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1320" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" rx="16" fill="url(#bgCash)" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="1200" height="48" rx="16" fill="#090E17"/>
+  <rect x="0" y="46" width="1200" height="2" fill="#1E293B"/>
+  <circle cx="24" cy="24" r="6" fill="#EF4444"/>
+  <circle cx="44" cy="24" r="6" fill="#F59E0B"/>
+  <circle cx="64" cy="24" r="6" fill="#10B981"/>
+  <text x="96" y="29" fill="#F8FAFC" font-family="'Inter', sans-serif" font-weight="700" font-size="14">PDV ATYLUS — Controle Financeiro &amp; Fechamento de Caixa</text>
+
+  <!-- Left Sidebar Mini -->
+  <rect x="0" y="48" width="220" height="702" fill="#0C141D"/>
+  <line x1="220" y1="48" x2="220" y2="750" stroke="#1A2938"/>
+
+  <g transform="translate(18, 64)">
+    <rect width="36" height="36" rx="10" fill="#10B981" fill-opacity="0.1" stroke="#10B981" stroke-width="1.5"/>
+    <text x="12" y="24" fill="#10B981" font-family="'Inter', sans-serif" font-weight="800" font-size="18">A</text>
+    <text x="46" y="20" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="800" font-size="14">PDV ATYLUS</text>
+  </g>
+
+  <!-- Cashier Active -->
+  <g transform="translate(14, 120)">
+    <rect x="0" y="0" width="192" height="38" rx="8" fill="transparent"/>
+    <text x="42" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="500" font-size="13">Frente de Caixa</text>
+
+    <rect x="0" y="46" width="192" height="38" rx="8" fill="transparent"/>
+    <text x="42" y="70" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="500" font-size="13">Produtos &amp; Estoque</text>
+
+    <rect x="0" y="92" width="192" height="38" rx="8" fill="transparent"/>
+    <text x="42" y="116" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="500" font-size="13">Histórico de Vendas</text>
+
+    <!-- Active Cashier -->
+    <rect x="0" y="138" width="192" height="42" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="1"/>
+    <rect x="0" y="138" width="4" height="42" rx="2" fill="#10B981"/>
+    <circle cx="24" cy="159" r="7" fill="#10B981"/>
+    <text x="42" y="164" fill="#34D399" font-family="'Inter', sans-serif" font-weight="700" font-size="13">Controle de Caixa</text>
+  </g>
+
+  <!-- Main View -->
+  <g transform="translate(250, 70)">
+    <text x="0" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="800" font-size="22">Resumo do Turno Atual — Caixa 01</text>
+    <text x="0" y="46" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">Aberto em: Hoje às 08:00 | Operador: Luana</text>
+
+    <!-- Quick Action Buttons -->
+    <g transform="translate(580, 0)">
+      <rect width="160" height="44" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="24" y="27" fill="#F8FAFC" font-family="'Inter', sans-serif" font-weight="700" font-size="12">💸 SANGRIA (F8)</text>
+
+      <rect x="175" width="160" height="44" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="20" y="27" fill="#F8FAFC" font-family="'Inter', sans-serif" font-weight="700" font-size="12">📥 SUPRIMENTO</text>
+    </g>
+
+    <!-- Metric Cards Grid -->
+    <g transform="translate(0, 80)">
+      <!-- Fundo de Troco -->
+      <rect width="215" height="110" rx="10" fill="#111B27" stroke="#1E293B"/>
+      <text x="20" y="32" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">Fundo Inicial (Troco)</text>
+      <text x="20" y="66" fill="#F8FAFC" font-family="'Inter', sans-serif" font-weight="800" font-size="24">R$ 100,00</text>
+      <text x="20" y="92" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Abertura de caixa</text>
+
+      <!-- Vendas em Dinheiro -->
+      <g transform="translate(235, 0)">
+        <rect width="215" height="110" rx="10" fill="#111B27" stroke="#1E293B"/>
+        <text x="20" y="32" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">Vendas em Dinheiro</text>
+        <text x="20" y="66" fill="#34D399" font-family="'Inter', sans-serif" font-weight="800" font-size="24">R$ 648,50</text>
+        <text x="20" y="92" fill="#10B981" font-family="'Inter', sans-serif" font-size="11">18 transações em gaveta</text>
+      </g>
+
+      <!-- Vendas Pix -->
+      <g transform="translate(470, 0)">
+        <rect width="215" height="110" rx="10" fill="#111B27" stroke="#1E293B"/>
+        <text x="20" y="32" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">Vendas via Pix</text>
+        <text x="20" y="66" fill="#38BDF8" font-family="'Inter', sans-serif" font-weight="800" font-size="24">R$ 892,00</text>
+        <text x="20" y="92" fill="#0284C7" font-family="'Inter', sans-serif" font-size="11">Confirmado automático</text>
+      </g>
+
+      <!-- Vendas Cartão -->
+      <g transform="translate(705, 0)">
+        <rect width="215" height="110" rx="10" fill="#111B27" stroke="#1E293B"/>
+        <text x="20" y="32" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">Cartão (Créd/Déb)</text>
+        <text x="20" y="66" fill="#A855F7" font-family="'Inter', sans-serif" font-weight="800" font-size="24">R$ 1.140,00</text>
+        <text x="20" y="92" fill="#9333EA" font-family="'Inter', sans-serif" font-size="11">31 comprovantes</text>
+      </g>
+    </g>
+
+    <!-- Total In Box & Blind Close -->
+    <g transform="translate(0, 220)">
+      <rect width="920" height="420" rx="12" fill="#0E1724" stroke="#1E293B"/>
+      
+      <!-- Panel Header -->
+      <rect width="920" height="50" rx="12" fill="#142131"/>
+      <text x="24" y="32" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="14">FECHAMENTO CEGO &amp; CONFERÊNCIA DE VALORES</text>
+      <text x="680" y="32" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">Segurança para o comerciante</text>
+
+      <g transform="translate(40, 80)">
+        <text x="0" y="24" fill="#CBD5E1" font-family="'Inter', sans-serif" font-weight="600" font-size="14">Como funciona o Fechamento Cego no PDV ATYLUS?</text>
+        <text x="0" y="48" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">O operador digita a contagem física das notas e moedas sem ver o saldo prévio do sistema.</text>
+        <text x="0" y="70" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">Isso evita desvios e garante 100% de honestidade e transparência na troca de turno!</text>
+
+        <!-- Total Geral Box -->
+        <g transform="translate(0, 100)">
+          <rect width="400" height="150" rx="10" fill="#111B27" stroke="#10B981"/>
+          <text x="24" y="36" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">FATURAMENTO TOTAL DO TURNO:</text>
+          <text x="24" y="80" fill="#34D399" font-family="'Inter', sans-serif" font-weight="900" font-size="36">R$ 2.680,50</text>
+          <text x="24" y="112" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="12">57 Vendas finalizadas com sucesso</text>
+          <text x="24" y="132" fill="#10B981" font-family="'Inter', sans-serif" font-weight="700" font-size="12">0 Falhas • 0 Travamentos</text>
+        </g>
+
+        <!-- Big Close Button -->
+        <g transform="translate(440, 100)">
+          <rect width="400" height="70" rx="10" fill="#10B981"/>
+          <text x="80" y="42" fill="#0B1320" font-family="'Inter', sans-serif" font-weight="900" font-size="18">FECHAR TURNO &amp; IMPRIMIR</text>
+          <text x="95" y="60" fill="#064E3B" font-family="'Inter', sans-serif" font-weight="600" font-size="11">Emite comprovante térmico do dia</text>
+
+          <rect y="85" width="400" height="55" rx="10" fill="#1E293B" stroke="#334155"/>
+          <text x="110" y="118" fill="#E2E8F0" font-family="'Inter', sans-serif" font-weight="700" font-size="14">Gerar Backup no Google Drive</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

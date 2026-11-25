@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" fill="none">
+  <defs>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="accentEm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <filter id="heroShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#10B981" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Background -->
+  <circle cx="500" cy="300" r="320" fill="#10B981" fill-opacity="0.08" filter="blur(60px)"/>
+  <circle cx="750" cy="400" r="220" fill="#06B6D4" fill-opacity="0.06" filter="blur(50px)"/>
+
+  <!-- BASE DESK SURFACE -->
+  <ellipse cx="500" cy="560" rx="460" ry="40" fill="#0A0F1D" fill-opacity="0.8"/>
+
+  <!-- ================= TERMINAL ALL-IN-ONE (CENTER-LEFT) ================= -->
+  <g transform="translate(100, 30)" filter="url(#heroShadow)">
+    <!-- Stand Neck -->
+    <path d="M 330 390 L 320 490 L 380 490 L 370 390 Z" fill="#1E293B" stroke="#334155"/>
+    <!-- Stand Base -->
+    <path d="M 270 490 L 430 490 L 460 520 L 240 520 Z" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <ellipse cx="350" cy="505" rx="90" ry="10" fill="#1E293B"/>
+
+    <!-- Monitor Outer Frame / Bezel -->
+    <rect x="20" y="20" width="660" height="420" rx="20" fill="url(#bezelGrad)" stroke="#475569" stroke-width="2.5"/>
+    <!-- Webcam / Light Sensor -->
+    <circle cx="350" cy="34" r="3" fill="#020617"/>
+    <circle cx="350" cy="34" r="1" fill="#38BDF8"/>
+    <!-- Inner Screen Border -->
+    <rect x="36" y="48" width="628" height="376" rx="10" fill="#020617"/>
+
+    <!-- SCREEN DISPLAY (PDV ATYLUS RUNNING) -->
+    <g transform="translate(36, 48)">
+      <!-- Screen Background -->
+      <rect width="628" height="376" rx="10" fill="url(#screenGrad)"/>
+
+      <!-- App Titlebar -->
+      <rect width="628" height="28" fill="#0A111C"/>
+      <circle cx="16" cy="14" r="4" fill="#EF4444"/>
+      <circle cx="28" cy="14" r="4" fill="#F59E0B"/>
+      <circle cx="40" cy="14" r="4" fill="#10B981"/>
+      <text x="60" y="18" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="800" font-size="9">PDV ATYLUS — Caixa 01 [Offline]</text>
+      <rect x="520" y="6" width="92" height="16" rx="8" fill="#10B981" fill-opacity="0.2"/>
+      <circle cx="530" cy="14" r="3" fill="#10B981"/>
+      <text x="538" y="17" fill="#34D399" font-family="'Inter', sans-serif" font-weight="700" font-size="8">100% OPERACIONAL</text>
+
+      <!-- Mini Sidebar -->
+      <rect y="28" width="46" height="348" fill="#070D16"/>
+      <rect x="10" y="40" width="26" height="26" rx="6" fill="#10B981" fill-opacity="0.2" stroke="#10B981"/>
+      <text x="19" y="57" fill="#10B981" font-family="'Inter', sans-serif" font-weight="900" font-size="13">A</text>
+      <circle cx="23" cy="90" r="5" fill="#10B981"/>
+      <circle cx="23" cy="120" r="5" fill="#475569"/>
+      <circle cx="23" cy="150" r="5" fill="#475569"/>
+      <circle cx="23" cy="180" r="5" fill="#475569"/>
+
+      <!-- Multi Tabs -->
+      <g transform="translate(56, 36)">
+        <rect width="110" height="24" rx="5" fill="#1E293B" stroke="#10B981"/>
+        <text x="12" y="16" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="9">Aba 01 (Venda #1042)</text>
+        <rect x="116" width="90" height="24" rx="5" fill="#111B27"/>
+        <text x="126" y="16" fill="#64748B" font-family="'Inter', sans-serif" font-size="8.5">Aba 02 (+ Novo)</text>
+      </g>
+
+      <!-- Barcode Search Input -->
+      <g transform="translate(56, 68)">
+        <rect width="360" height="34" rx="6" fill="#0F1A2A" stroke="#10B981" stroke-width="1.5"/>
+        <text x="10" y="21" fill="#10B981" font-family="'Inter', sans-serif" font-weight="800" font-size="10">SCANNER: 7891000315507</text>
+        <rect x="280" y="6" width="70" height="22" rx="4" fill="#10B981"/>
+        <text x="290" y="20" fill="#0A111C" font-family="'Inter', sans-serif" font-weight="900" font-size="9">INSERIR</text>
+      </g>
+
+      <!-- Cart Table Mock -->
+      <g transform="translate(56, 110)">
+        <rect width="360" height="200" rx="6" fill="#0C1420" stroke="#1A2838"/>
+        <!-- Header -->
+        <rect width="360" height="22" rx="6" fill="#142131"/>
+        <text x="8" y="15" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8" font-weight="bold">ITEM / PRODUTO</text>
+        <text x="240" y="15" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8" font-weight="bold">QTD</text>
+        <text x="310" y="15" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8" font-weight="bold">TOTAL</text>
+
+        <!-- Rows -->
+        <text x="8" y="38" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600">01. Refrigerante Coca-Cola 2L</text>
+        <text x="240" y="38" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="8.5">2 un</text>
+        <text x="310" y="38" fill="#34D399" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold">R$ 19,00</text>
+
+        <text x="8" y="62" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600">02. Café Tradicional Torrado 500g</text>
+        <text x="240" y="62" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="8.5">1 un</text>
+        <text x="310" y="62" fill="#34D399" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold">R$ 18,90</text>
+
+        <text x="8" y="86" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600">03. Arroz Branco Nobre 5kg</text>
+        <text x="240" y="86" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="8.5">1 un</text>
+        <text x="310" y="86" fill="#34D399" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold">R$ 26,90</text>
+
+        <text x="8" y="110" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600">04. Biscoito Recheado 140g</text>
+        <text x="240" y="110" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="8.5">3 un</text>
+        <text x="310" y="110" fill="#34D399" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold">R$ 11,70</text>
+
+        <rect x="0" y="124" width="360" height="26" fill="#10B981" fill-opacity="0.15"/>
+        <text x="8" y="141" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold">05. Sabonete Cremoso Suave</text>
+        <text x="240" y="141" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="8.5">2 un</text>
+        <text x="310" y="141" fill="#34D399" font-family="'Inter', sans-serif" font-size="9" font-weight="900">R$ 8,00</text>
+      </g>
+
+      <!-- Right Summary Panel -->
+      <g transform="translate(426, 68)">
+        <rect width="186" height="150" rx="8" fill="#111B27" stroke="#10B981" stroke-width="1.5"/>
+        <text x="14" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9" font-weight="bold">TOTAL DA VENDA</text>
+        <text x="14" y="60" fill="#34D399" font-family="'Inter', sans-serif" font-size="26" font-weight="900">R$ 84,50</text>
+
+        <rect x="14" y="74" width="158" height="40" rx="6" fill="#10B981" filter="url(#glowGreen)"/>
+        <text x="42" y="98" fill="#0A111C" font-family="'Inter', sans-serif" font-size="12" font-weight="900">RECEBER (F5)</text>
+
+        <rect x="14" y="120" width="158" height="22" rx="4" fill="#1E293B"/>
+        <text x="34" y="135" fill="#38BDF8" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold">⚡ Pix Automático Ativo</text>
+      </g>
+
+      <!-- Bottom Hotkeys -->
+      <g transform="translate(56, 320)">
+        <rect width="556" height="38" rx="6" fill="#0A111C" stroke="#1A2838"/>
+        <text x="14" y="23" fill="#34D399" font-family="'Inter', sans-serif" font-weight="bold" font-size="8.5">[F1] Ajuda</text>
+        <text x="80" y="23" fill="#34D399" font-family="'Inter', sans-serif" font-weight="bold" font-size="8.5">[F2] Produtos</text>
+        <text x="156" y="23" fill="#34D399" font-family="'Inter', sans-serif" font-weight="bold" font-size="8.5">[F3] Caixa</text>
+        <text x="216" y="23" fill="#34D399" font-family="'Inter', sans-serif" font-weight="bold" font-size="8.5">[F4] Importar IA</text>
+        <text x="296" y="23" fill="#10B981" font-family="'Inter', sans-serif" font-weight="900" font-size="9">[F5] Fechar Venda</text>
+        <text x="390" y="23" fill="#EF4444" font-family="'Inter', sans-serif" font-weight="bold" font-size="8.5">[Del] Excluir</text>
+        <text x="460" y="23" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8.5">100% Teclado / Leitor</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= THERMAL RECEIPT PRINTER (RIGHT) ================= -->
+  <g transform="translate(730, 290)" filter="url(#heroShadow)">
+    <!-- Printer Body -->
+    <rect x="0" y="50" width="180" height="150" rx="14" fill="#1A2234" stroke="#334155" stroke-width="2"/>
+    <rect x="15" y="75" width="150" height="20" rx="4" fill="#0A0E17"/>
+    <!-- Status LEDs -->
+    <circle cx="35" cy="165" r="4" fill="#10B981"/>
+    <text x="45" y="168" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="7">POWER</text>
+    <circle cx="85" cy="165" r="4" fill="#38BDF8"/>
+    <text x="95" y="168" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="7">FEED</text>
+
+    <!-- Cut Slot -->
+    <rect x="25" y="65" width="130" height="6" rx="3" fill="#020617"/>
+
+    <!-- Paper Coming Out -->
+    <g transform="translate(30, -70)">
+      <path d="M 0 0 L 120 0 L 120 135 L 0 135 Z" fill="#FAF8F5" stroke="#E2E8F0"/>
+      <!-- Text on receipt -->
+      <text x="60" y="22" text-anchor="middle" font-family="'Courier New', monospace" font-weight="bold" font-size="7.5" fill="#1E293B">MERCADINHO ATYLUS</text>
+      <text x="60" y="32" text-anchor="middle" font-family="'Courier New', monospace" font-size="6" fill="#475569">CUPOM NÃO FISCAL</text>
+      <text x="60" y="40" text-anchor="middle" font-family="'Courier New', monospace" font-size="6" fill="#94A3B8">------------------------</text>
+      <text x="10" y="50" font-family="'Courier New', monospace" font-size="6" fill="#1E293B">COCA-COLA 2L: R$ 19,00</text>
+      <text x="10" y="60" font-family="'Courier New', monospace" font-size="6" fill="#1E293B">CAFE 500G:    R$ 18,90</text>
+      <text x="10" y="70" font-family="'Courier New', monospace" font-size="6" fill="#1E293B">ARROZ 5KG:    R$ 26,90</text>
+      <text x="60" y="80" text-anchor="middle" font-family="'Courier New', monospace" font-size="6" fill="#94A3B8">------------------------</text>
+      <text x="10" y="92" font-family="'Courier New', monospace" font-weight="bold" font-size="8" fill="#047857">TOTAL: R$ 84,50</text>
+      <text x="10" y="103" font-family="'Courier New', monospace" font-size="6" fill="#0284C7">PAGO COM PIX DINÂMICO</text>
+      <text x="60" y="118" text-anchor="middle" font-family="'Courier New', monospace" font-size="5.5" fill="#64748B">SISTEMA: PDV ATYLUS</text>
+    </g>
+  </g>
+
+  <!-- ================= BARCODE SCANNER (LEFT FOREGROUND) ================= -->
+  <g transform="translate(60, 390)" filter="url(#heroShadow)">
+    <!-- Scanner Stand Base -->
+    <ellipse cx="60" cy="160" rx="35" ry="12" fill="#0F172A" stroke="#334155"/>
+    <path d="M 55 90 L 55 160 L 65 160 L 65 90 Z" fill="#1E293B"/>
+
+    <!-- Gun Grip and Head -->
+    <g transform="rotate(22 70 80)">
+      <!-- Handle -->
+      <path d="M 40 50 L 58 130 L 74 126 L 62 48 Z" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+      <rect x="44" y="68" width="10" height="18" rx="2" fill="#10B981"/>
+      <!-- Scanner Head -->
+      <path d="M 30 20 L 95 10 L 105 50 L 35 55 Z" fill="#0F172A" stroke="#475569" stroke-width="2"/>
+      <!-- Glass Lens -->
+      <polygon points="95,10 105,50 102,52 92,12" fill="#EF4444"/>
+      
+      <!-- Red Laser Beam Emitter -->
+      <polygon points="105,25 290,5 310,95 105,40" fill="url(#laserGrad)" opacity="0.45"/>
+      <line x1="105" y1="32" x2="300" y2="48" stroke="#EF4444" stroke-width="2" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Floating Feature Badge 1: 100% Offline -->
+  <g transform="translate(40, 90)" filter="url(#heroShadow)">
+    <rect width="170" height="52" rx="12" fill="#0B1320" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="28" cy="26" r="14" fill="#10B981" fill-opacity="0.15"/>
+    <text x="21" y="32" fill="#10B981" font-size="16">⚡</text>
+    <text x="50" y="22" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="800" font-size="11">100% Offline-First</text>
+    <text x="50" y="38" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9.5">Venda sem internet</text>
+  </g>
+
+  <!-- Floating Feature Badge 2: Licença Vitalícia R$ 30 -->
+  <g transform="translate(730, 90)" filter="url(#heroShadow)">
+    <rect width="190" height="60" rx="14" fill="#0B1320" stroke="#06B6D4" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#06B6D4" fill-opacity="0.15"/>
+    <text x="22" y="36" fill="#38BDF8" font-size="16">💎</text>
+    <text x="54" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="900" font-size="11.5">LICENÇA VITALÍCIA</text>
+    <text x="54" y="44" fill="#34D399" font-family="'Inter', sans-serif" font-weight="900" font-size="16">R$ 30,00 <tspan fill="#94A3B8" font-size="9" font-weight="normal">único</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="60" viewBox="0 0 280 60" fill="none">
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+      @keyframes cartDriveMotion {
+        0%, 100% { transform: translate(6px, 8px) rotate(0deg); }
+        20% { transform: translate(3.5px, 8.5px) rotate(-1.5deg); }
+        45% { transform: translate(10px, 7.5px) rotate(1.2deg); }
+        65% { transform: translate(8px, 8.2px) rotate(-0.5deg); }
+        85% { transform: translate(9.5px, 7.8px) rotate(0.8deg); }
+      }
+      @keyframes wheelSpinAnim {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes trailPulseAnim1 {
+        0%, 100% { opacity: 0.3; transform: translateX(0) scaleX(0.7); }
+        45% { opacity: 1; transform: translateX(-5px) scaleX(1.4); }
+        75% { opacity: 0.6; transform: translateX(-1.5px) scaleX(1); }
+      }
+      @keyframes trailPulseAnim2 {
+        0%, 100% { opacity: 0.25; transform: translateX(0) scaleX(0.6); }
+        50% { opacity: 1; transform: translateX(-6px) scaleX(1.5); }
+        80% { opacity: 0.5; transform: translateX(-2px) scaleX(1.1); }
+      }
+      @keyframes trailPulseAnim3 {
+        0%, 100% { opacity: 0.2; transform: translateX(0) scaleX(0.5); }
+        55% { opacity: 0.9; transform: translateX(-4px) scaleX(1.3); }
+        85% { opacity: 0.4; transform: translateX(-1px) scaleX(0.9); }
+      }
+      .animated-cart-group {
+        animation: cartDriveMotion 2.6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+        transform-origin: 25px 25px;
+      }
+      .cart-wheel-1, .cart-wheel-2 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: wheelSpinAnim 1.2s linear infinite;
+      }
+      .cart-trail-1 {
+        animation: trailPulseAnim1 1.3s ease-in-out infinite;
+        transform-origin: 6px 12px;
+      }
+      .cart-trail-2 {
+        animation: trailPulseAnim2 1.3s ease-in-out infinite 0.2s;
+        transform-origin: 8px 18px;
+      }
+      .cart-trail-3 {
+        animation: trailPulseAnim3 1.3s ease-in-out infinite 0.4s;
+        transform-origin: 6px 24px;
+      }
+      ]]>
+    </style>
+  </defs>
+
+  <!-- Shopping Cart Group with Speed Trails -->
+  <g class="animated-cart-group" transform="translate(6, 8)">
+    <!-- Speed / Wind Trails -->
+    <line class="cart-trail-1" x1="-1" y1="12" x2="6" y2="12" stroke="#38BDF8" stroke-width="2.6" stroke-linecap="round"/>
+    <line class="cart-trail-2" x1="1" y1="18" x2="8" y2="18" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round"/>
+    <line class="cart-trail-3" x1="0" y1="24" x2="6" y2="24" stroke="#0284C7" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Cart Basket Frame -->
+    <path d="M4 6H12L16 30H38L42 12H15" stroke="#2563EB" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Basket Inner Accent Bar -->
+    <path d="M16 18H40" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Front & Rear Wheels with Rotating Spokes -->
+    <g class="cart-wheel-1">
+      <circle cx="19" cy="38" r="4.6" fill="#2563EB"/>
+      <circle cx="19" cy="38" r="4.6" fill="none" stroke="#1D4ED8" stroke-width="1"/>
+      <line x1="16.5" y1="38" x2="21.5" y2="38" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="19" y1="35.5" x2="19" y2="40.5" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+
+    <g class="cart-wheel-2">
+      <circle cx="35" cy="38" r="4.6" fill="#2563EB"/>
+      <circle cx="35" cy="38" r="4.6" fill="none" stroke="#1D4ED8" stroke-width="1"/>
+      <line x1="32.5" y1="38" x2="37.5" y2="38" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="35" y1="35.5" x2="35" y2="40.5" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Typography: PDV ATYLUS -->
+  <text x="64" y="38" fill="#0F172A" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="26" letter-spacing="-0.5">
+    PDV <tspan fill="#2563EB">ATYLUS</tspan>
+  </text>
+</svg>

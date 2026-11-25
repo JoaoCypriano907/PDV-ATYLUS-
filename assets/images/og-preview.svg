@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1200" height="630" fill="#F8FAFC"/>
+
+  <!-- Subtle Top Accent Bar -->
+  <rect width="1200" height="8" fill="#2563EB"/>
+
+  <!-- Left: The Official Blue "A" Squircle Logo in large size -->
+  <g transform="translate(100, 165)">
+    <defs>
+      <linearGradient id="ogBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6"/>
+        <stop offset="40%" stop-color="#2563EB"/>
+        <stop offset="100%" stop-color="#1D4ED8"/>
+      </linearGradient>
+      <filter id="ogShadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#1E3A8A" flood-opacity="0.25"/>
+      </filter>
+    </defs>
+    <rect width="300" height="300" rx="75" fill="url(#ogBlueGrad)" filter="url(#ogShadow)"/>
+    <rect x="2" y="2" width="296" height="296" rx="73" stroke="#93C5FD" stroke-width="4" stroke-opacity="0.4"/>
+    <text x="150" y="220" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="200">
+      A
+    </text>
+  </g>
+
+  <!-- Right: Title, Info, Price -->
+  <g transform="translate(460, 175)">
+    <!-- Pill -->
+    <rect width="280" height="38" rx="19" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <text x="140" y="24" text-anchor="middle" fill="#1D4ED8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" letter-spacing="1">
+      COMPRA ÚNICA • SEM MENSALIDADE
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="105" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="56" letter-spacing="-1">
+      PDV <tspan fill="#2563EB">ATYLUS</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="150" fill="#475569" font-family="'Inter', sans-serif" font-size="24">
+      O sistema de caixa completo do pequeno comércio.
+    </text>
+    <text x="0" y="185" fill="#64748B" font-family="'Inter', sans-serif" font-size="20">
+      100% Offline • Frente de Caixa • Estoque • Fiado
+    </text>
+
+    <!-- Price Highlight Box -->
+    <g transform="translate(0, 220)">
+      <rect width="380" height="70" rx="16" fill="#2563EB"/>
+      <text x="24" y="46" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="30">
+        LICENÇA VITALÍCIA: R$ 30,00
+      </text>
+    </g>
+  </g>
+</svg>

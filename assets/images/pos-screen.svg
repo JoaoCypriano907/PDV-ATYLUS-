@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1320" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="shadowBox" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- Top Titlebar -->
+  <rect x="0" y="0" width="1200" height="48" rx="16" fill="#090E17"/>
+  <rect x="0" y="46" width="1200" height="2" fill="#1E293B"/>
+  
+  <!-- Window Controls -->
+  <circle cx="24" cy="24" r="6" fill="#EF4444"/>
+  <circle cx="44" cy="24" r="6" fill="#F59E0B"/>
+  <circle cx="64" cy="24" r="6" fill="#10B981"/>
+
+  <!-- Title & Status -->
+  <text x="96" y="29" fill="#F8FAFC" font-family="'Inter', sans-serif" font-weight="700" font-size="14">PDV ATYLUS — Frente de Caixa Offline</text>
+  <rect x="360" y="14" width="110" height="22" rx="11" fill="#10B981" fill-opacity="0.15"/>
+  <circle cx="374" cy="25" r="4" fill="#10B981"/>
+  <text x="385" y="29" fill="#34D399" font-family="'Inter', sans-serif" font-weight="600" font-size="11">CAIXA ABERTO</text>
+  
+  <text x="980" y="29" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">Operador: <tspan fill="#F1F5F9" font-weight="600">Luana (Caixa 01)</tspan> | 100% Offline</text>
+
+  <!-- Left Sidebar Navigation -->
+  <rect x="0" y="48" width="220" height="702" fill="#0C141D"/>
+  <line x1="220" y1="48" x2="220" y2="750" stroke="#1A2938"/>
+
+  <!-- Sidebar Brand -->
+  <g transform="translate(18, 64)">
+    <rect width="36" height="36" rx="10" fill="#10B981" fill-opacity="0.1" stroke="#10B981" stroke-width="1.5"/>
+    <text x="12" y="24" fill="#10B981" font-family="'Inter', sans-serif" font-weight="800" font-size="18">A</text>
+    <text x="46" y="20" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="800" font-size="14">PDV ATYLUS</text>
+    <text x="46" y="32" fill="#64748B" font-family="'Inter', sans-serif" font-weight="500" font-size="10">VERSÃO VITALÍCIA</text>
+  </g>
+
+  <!-- Sidebar Menu Items -->
+  <g transform="translate(14, 120)">
+    <!-- Active POS item -->
+    <rect x="0" y="0" width="192" height="42" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="42" rx="2" fill="#10B981"/>
+    <circle cx="24" cy="21" r="7" fill="#10B981"/>
+    <text x="42" y="26" fill="#34D399" font-family="'Inter', sans-serif" font-weight="700" font-size="13">Frente de Caixa</text>
+    <text x="156" y="26" fill="#10B981" font-family="'Inter', sans-serif" font-weight="700" font-size="10">F1</text>
+
+    <!-- Products -->
+    <rect x="0" y="50" width="192" height="38" rx="8" fill="transparent"/>
+    <text x="42" y="74" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="500" font-size="13">Produtos &amp; Estoque</text>
+
+    <!-- Sales -->
+    <rect x="0" y="96" width="192" height="38" rx="8" fill="transparent"/>
+    <text x="42" y="120" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="500" font-size="13">Histórico de Vendas</text>
+
+    <!-- Cashier -->
+    <rect x="0" y="142" width="192" height="38" rx="8" fill="transparent"/>
+    <text x="42" y="166" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="500" font-size="13">Controle de Caixa</text>
+
+    <!-- AI Importer -->
+    <rect x="0" y="188" width="192" height="38" rx="8" fill="transparent"/>
+    <text x="42" y="212" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="500" font-size="13">Importador IA</text>
+    <rect x="145" y="198" width="38" height="18" rx="4" fill="#06B6D4" fill-opacity="0.2"/>
+    <text x="152" y="211" fill="#22D3EE" font-family="'Inter', sans-serif" font-weight="700" font-size="9">NOVO</text>
+
+    <!-- Settings -->
+    <rect x="0" y="234" width="192" height="38" rx="8" fill="transparent"/>
+    <text x="42" y="258" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="500" font-size="13">Configurações</text>
+  </g>
+
+  <!-- Sidebar Bottom Banner -->
+  <g transform="translate(14, 630)">
+    <rect width="192" height="90" rx="10" fill="#131F2E" stroke="#1E293B"/>
+    <text x="14" y="24" fill="#E2E8F0" font-family="'Inter', sans-serif" font-weight="700" font-size="12">Licença Vitalícia Ativa</text>
+    <text x="14" y="42" fill="#10B981" font-family="'Inter', sans-serif" font-weight="800" font-size="14">PDV ATYLUS</text>
+    <text x="14" y="60" fill="#64748B" font-family="'Inter', sans-serif" font-size="10">Sem mensalidades</text>
+    <rect x="14" y="66" width="164" height="16" rx="4" fill="#10B981" fill-opacity="0.15"/>
+    <text x="40" y="78" fill="#34D399" font-family="'Inter', sans-serif" font-weight="600" font-size="9.5">✓ 100% Validado &amp; Ativo</text>
+  </g>
+
+  <!-- Main POS Content -->
+  <!-- Top Multi-Abas (Multiple sales tabs) -->
+  <g transform="translate(236, 60)">
+    <!-- Tab 1 Active -->
+    <rect width="170" height="38" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="16" cy="19" r="4" fill="#10B981"/>
+    <text x="28" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="12">Venda #1042</text>
+    <text x="110" y="24" fill="#34D399" font-family="'Inter', sans-serif" font-weight="800" font-size="12">R$ 84,50</text>
+    
+    <!-- Tab 2 Inactive -->
+    <rect x="180" width="160" height="38" rx="8" fill="#111B27" stroke="#1A2838"/>
+    <text x="196" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="600" font-size="12">Venda #1043 (Mesa 4)</text>
+
+    <!-- New Tab Button -->
+    <rect x="350" width="120" height="38" rx="8" fill="#111B27" stroke="#334155" stroke-dasharray="3 3"/>
+    <text x="368" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="600" font-size="12">+ Nova Aba</text>
+  </g>
+
+  <!-- Scanner Input Bar -->
+  <g transform="translate(236, 110)">
+    <rect width="610" height="52" rx="10" fill="#111C2A" stroke="#10B981" stroke-width="2"/>
+    <text x="18" y="32" fill="#10B981" font-family="'Inter', sans-serif" font-weight="800" font-size="16">⌨ CÓDIGO OU NOME:</text>
+    <text x="195" y="32" fill="#FFFFFF" font-family="'Courier New', monospace" font-weight="700" font-size="18">7891000315507</text>
+    <rect x="345" y="16" width="3" height="20" fill="#10B981"/>
+    <rect x="490" y="10" width="108" height="32" rx="6" fill="#10B981"/>
+    <text x="506" y="30" fill="#0B1320" font-family="'Inter', sans-serif" font-weight="800" font-size="12">ENTER: ADICIONAR</text>
+  </g>
+
+  <!-- Product Cart Table -->
+  <g transform="translate(236, 174)">
+    <rect width="610" height="470" rx="10" fill="#0E1724" stroke="#1A2838"/>
+    
+    <!-- Table Header -->
+    <rect width="610" height="38" rx="10" fill="#142131"/>
+    <text x="16" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="700" font-size="11">ITEM</text>
+    <text x="60" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="700" font-size="11">DESCRIÇÃO DO PRODUTO</text>
+    <text x="330" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="700" font-size="11">QTD</text>
+    <text x="410" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="700" font-size="11">VL. UNIT</text>
+    <text x="520" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="700" font-size="11">TOTAL</text>
+
+    <!-- Row 1 -->
+    <rect x="0" y="38" width="610" height="52" fill="#121D2C"/>
+    <text x="16" y="70" fill="#64748B" font-family="'Inter', sans-serif" font-weight="700" font-size="13">01</text>
+    <text x="60" y="65" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="600" font-size="13">Refrigerante Coca-Cola 2L Pet</text>
+    <text x="60" y="80" fill="#64748B" font-family="'Courier New', monospace" font-size="10">EAN: 7894900010015</text>
+    <text x="330" y="70" fill="#E2E8F0" font-family="'Inter', sans-serif" font-weight="600" font-size="13">2 un</text>
+    <text x="410" y="70" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="13">R$ 9,50</text>
+    <text x="520" y="70" fill="#34D399" font-family="'Inter', sans-serif" font-weight="700" font-size="14">R$ 19,00</text>
+
+    <!-- Row 2 -->
+    <rect x="0" y="90" width="610" height="52" fill="#0E1724"/>
+    <text x="16" y="122" fill="#64748B" font-family="'Inter', sans-serif" font-weight="700" font-size="13">02</text>
+    <text x="60" y="117" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="600" font-size="13">Café Torrado e Moído Tradicional 500g</text>
+    <text x="60" y="132" fill="#64748B" font-family="'Courier New', monospace" font-size="10">EAN: 7891000315507</text>
+    <text x="330" y="122" fill="#E2E8F0" font-family="'Inter', sans-serif" font-weight="600" font-size="13">1 un</text>
+    <text x="410" y="122" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="13">R$ 18,90</text>
+    <text x="520" y="122" fill="#34D399" font-family="'Inter', sans-serif" font-weight="700" font-size="14">R$ 18,90</text>
+
+    <!-- Row 3 -->
+    <rect x="0" y="142" width="610" height="52" fill="#121D2C"/>
+    <text x="16" y="174" fill="#64748B" font-family="'Inter', sans-serif" font-weight="700" font-size="13">03</text>
+    <text x="60" y="169" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="600" font-size="13">Arroz Branco Tipo 1 Nobre 5kg</text>
+    <text x="60" y="184" fill="#64748B" font-family="'Courier New', monospace" font-size="10">EAN: 7896001200451</text>
+    <text x="330" y="174" fill="#E2E8F0" font-family="'Inter', sans-serif" font-weight="600" font-size="13">1 un</text>
+    <text x="410" y="174" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="13">R$ 26,90</text>
+    <text x="520" y="174" fill="#34D399" font-family="'Inter', sans-serif" font-weight="700" font-size="14">R$ 26,90</text>
+
+    <!-- Row 4 -->
+    <rect x="0" y="194" width="610" height="52" fill="#0E1724"/>
+    <text x="16" y="226" fill="#64748B" font-family="'Inter', sans-serif" font-weight="700" font-size="13">04</text>
+    <text x="60" y="221" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="600" font-size="13">Biscoito Recheado Chocolate 140g</text>
+    <text x="60" y="236" fill="#64748B" font-family="'Courier New', monospace" font-size="10">EAN: 7891000100202</text>
+    <text x="330" y="226" fill="#E2E8F0" font-family="'Inter', sans-serif" font-weight="600" font-size="13">3 un</text>
+    <text x="410" y="226" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="13">R$ 3,90</text>
+    <text x="520" y="226" fill="#34D399" font-family="'Inter', sans-serif" font-weight="700" font-size="14">R$ 11,70</text>
+
+    <!-- Row 5 Selected -->
+    <rect x="0" y="246" width="610" height="52" fill="#10B981" fill-opacity="0.12" stroke="#10B981" stroke-width="1"/>
+    <text x="16" y="278" fill="#34D399" font-family="'Inter', sans-serif" font-weight="800" font-size="13">05</text>
+    <text x="60" y="273" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="13">Sabonete Cremoso Suave 90g</text>
+    <text x="60" y="288" fill="#34D399" font-family="'Courier New', monospace" font-size="10">EAN: 7891010203040 [SELECIONADO]</text>
+    <text x="330" y="278" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="13">2 un</text>
+    <text x="410" y="278" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">R$ 4,00</text>
+    <text x="520" y="278" fill="#34D399" font-family="'Inter', sans-serif" font-weight="800" font-size="15">R$ 8,00</text>
+  </g>
+
+  <!-- Right Summary & Payment Panel -->
+  <g transform="translate(864, 110)">
+    <!-- Total Card -->
+    <rect width="316" height="230" rx="12" fill="#111B27" stroke="#10B981" stroke-width="2"/>
+    
+    <text x="24" y="36" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="600" font-size="12">SUBTOTAL (5 ITENS):</text>
+    <text x="220" y="36" fill="#CBD5E1" font-family="'Inter', sans-serif" font-weight="700" font-size="15">R$ 84,50</text>
+
+    <text x="24" y="68" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="600" font-size="12">DESCONTO:</text>
+    <text x="238" y="68" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="700" font-size="14">R$ 0,00</text>
+
+    <line x1="24" y1="88" x2="292" y2="88" stroke="#1E293B" stroke-width="1.5"/>
+
+    <text x="24" y="122" fill="#38BDF8" font-family="'Inter', sans-serif" font-weight="800" font-size="12">TOTAL A PAGAR</text>
+    <text x="24" y="174" fill="#34D399" font-family="'Inter', sans-serif" font-weight="900" font-size="44" letter-spacing="-1">R$ 84,50</text>
+    <text x="24" y="202" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Operação autorizada para fechamento</text>
+
+    <!-- Big Action Button: Fechar Venda / Pagamento -->
+    <g transform="translate(0, 246)">
+      <rect width="316" height="74" rx="12" fill="url(#primaryGrad)" filter="url(#shadowBox)"/>
+      <text x="65" y="44" fill="#0B1320" font-family="'Inter', sans-serif" font-weight="900" font-size="20">RECEBER (F5)</text>
+      <text x="238" y="44" fill="#0B1320" font-family="'Inter', sans-serif" font-weight="700" font-size="14">➜</text>
+      <text x="65" y="60" fill="#064E3B" font-family="'Inter', sans-serif" font-weight="600" font-size="11">Pix, Dinheiro, Cartão Crédito/Débito</text>
+    </g>
+
+    <!-- Secondary Actions -->
+    <g transform="translate(0, 336)">
+      <rect width="152" height="46" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="28" y="28" fill="#F1F5F9" font-family="'Inter', sans-serif" font-weight="700" font-size="12">Cancelar (Del)</text>
+
+      <rect x="164" width="152" height="46" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="188" y="28" fill="#F1F5F9" font-family="'Inter', sans-serif" font-weight="700" font-size="12">Pesquisar (F2)</text>
+    </g>
+
+    <!-- Fast Status Box -->
+    <g transform="translate(0, 396)">
+      <rect width="316" height="130" rx="10" fill="#0A111A" stroke="#1E293B"/>
+      <text x="16" y="28" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="700" font-size="11">DADOS DO CLIENTE</text>
+      <text x="16" y="52" fill="#F8FAFC" font-family="'Inter', sans-serif" font-weight="600" font-size="13">Consumidor Final (Balcão)</text>
+      <text x="16" y="72" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">CPF/CNPJ: Não informado</text>
+      <rect x="16" y="86" width="284" height="30" rx="6" fill="#1E293B"/>
+      <text x="75" y="106" fill="#38BDF8" font-family="'Inter', sans-serif" font-weight="600" font-size="11">Identificar Cliente (F6)</text>
+    </g>
+  </g>
+
+  <!-- Bottom Global Hotkeys Bar -->
+  <g transform="translate(236, 660)">
+    <rect width="944" height="68" rx="10" fill="#090E17" stroke="#1E293B"/>
+    
+    <!-- Hotkeys -->
+    <g transform="translate(20, 18)">
+      <rect width="90" height="32" rx="6" fill="#1E293B"/>
+      <text x="14" y="21" fill="#34D399" font-family="'Inter', sans-serif" font-weight="800" font-size="12">F1</text>
+      <text x="36" y="21" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="11">Ajuda</text>
+    </g>
+
+    <g transform="translate(125, 18)">
+      <rect width="105" height="32" rx="6" fill="#1E293B"/>
+      <text x="14" y="21" fill="#34D399" font-family="'Inter', sans-serif" font-weight="800" font-size="12">F2</text>
+      <text x="36" y="21" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="11">Busca Prod</text>
+    </g>
+
+    <g transform="translate(245, 18)">
+      <rect width="105" height="32" rx="6" fill="#1E293B"/>
+      <text x="14" y="21" fill="#34D399" font-family="'Inter', sans-serif" font-weight="800" font-size="12">F3</text>
+      <text x="36" y="21" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="11">Cx. Sangria</text>
+    </g>
+
+    <g transform="translate(365, 18)">
+      <rect width="115" height="32" rx="6" fill="#1E293B"/>
+      <text x="14" y="21" fill="#34D399" font-family="'Inter', sans-serif" font-weight="800" font-size="12">F4</text>
+      <text x="36" y="21" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="11">Importar IA</text>
+    </g>
+
+    <g transform="translate(495, 18)">
+      <rect width="110" height="32" rx="6" fill="#10B981" fill-opacity="0.2" stroke="#10B981"/>
+      <text x="14" y="21" fill="#34D399" font-family="'Inter', sans-serif" font-weight="800" font-size="12">F5</text>
+      <text x="36" y="21" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="11">Pagar Venda</text>
+    </g>
+
+    <g transform="translate(620, 18)">
+      <rect width="105" height="32" rx="6" fill="#1E293B"/>
+      <text x="14" y="21" fill="#EF4444" font-family="'Inter', sans-serif" font-weight="800" font-size="12">Del</text>
+      <text x="42" y="21" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="11">Excluir</text>
+    </g>
+
+    <g transform="translate(740, 18)">
+      <rect width="180" height="32" rx="6" fill="#0C141D"/>
+      <circle cx="16" cy="16" r="4" fill="#10B981"/>
+      <text x="28" y="20" fill="#34D399" font-family="'Inter', sans-serif" font-weight="600" font-size="10.5">Leitor HID Conectado</text>
+    </g>
+  </g>
+</svg>

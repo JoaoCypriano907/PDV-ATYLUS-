@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" fill="none">
+  <!-- macOS / Window Outer Frame -->
+  <rect width="1200" height="680" rx="18" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Window Header Bar with dots -->
+  <circle cx="28" cy="24" r="5" fill="#EF4444"/>
+  <circle cx="46" cy="24" r="5" fill="#F59E0B"/>
+  <circle cx="64" cy="24" r="5" fill="#10B981"/>
+
+  <!-- Left Sidebar (Dark) -->
+  <g transform="translate(0, 48)">
+    <rect width="180" height="632" fill="#0F172A"/>
+    <line x1="180" y1="0" x2="180" y2="632" stroke="#1E293B"/>
+
+    <!-- Sidebar Mini Logo -->
+    <g transform="translate(24, 16)">
+      <path d="M2 3H6L8 18H22L24 6H8" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="10" cy="22" r="2.5" fill="#38BDF8"/>
+      <circle cx="20" cy="22" r="2.5" fill="#38BDF8"/>
+      <text x="30" y="18" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="12">ATYLUS</text>
+    </g>
+
+    <!-- Menu Items -->
+    <g transform="translate(16, 60)" font-family="'Inter', sans-serif" font-size="12">
+      <!-- Painel Active -->
+      <rect x="0" y="0" width="148" height="34" rx="8" fill="#1E293B"/>
+      <circle cx="18" cy="17" r="4" fill="#38BDF8"/>
+      <text x="32" y="21" fill="#FFFFFF" font-weight="700">Painel</text>
+
+      <g transform="translate(0, 40)">
+        <text x="32" y="21" fill="#94A3B8">Nova Venda</text>
+      </g>
+      <g transform="translate(0, 76)">
+        <text x="32" y="21" fill="#94A3B8">Caixa</text>
+      </g>
+      <g transform="translate(0, 112)">
+        <text x="32" y="21" fill="#94A3B8">Vendas</text>
+      </g>
+      <g transform="translate(0, 148)">
+        <text x="32" y="21" fill="#94A3B8">Relatórios</text>
+      </g>
+
+      <!-- LOJA Group -->
+      <text x="8" y="200" fill="#64748B" font-size="9" font-weight="700" letter-spacing="1">LOJA</text>
+
+      <g transform="translate(0, 216)">
+        <text x="32" y="21" fill="#94A3B8">Produtos</text>
+      </g>
+      <g transform="translate(0, 252)">
+        <text x="32" y="21" fill="#94A3B8">Estoque</text>
+        <circle cx="132" cy="17" r="8" fill="#EF4444"/>
+        <text x="129" y="21" fill="#FFFFFF" font-size="9" font-weight="bold">6</text>
+      </g>
+      <g transform="translate(0, 288)">
+        <text x="32" y="21" fill="#94A3B8">Etiquetas</text>
+      </g>
+      <g transform="translate(0, 324)">
+        <text x="32" y="21" fill="#94A3B8">Clientes</text>
+      </g>
+      <g transform="translate(0, 360)">
+        <text x="32" y="21" fill="#94A3B8">Compras</text>
+      </g>
+      <g transform="translate(0, 396)">
+        <text x="32" y="21" fill="#94A3B8">Contas</text>
+        <circle cx="132" cy="17" r="8" fill="#EF4444"/>
+        <text x="130" y="21" fill="#FFFFFF" font-size="9" font-weight="bold">1</text>
+      </g>
+      <g transform="translate(0, 432)">
+        <text x="32" y="21" fill="#94A3B8">Cadastros</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Main Content Area (White background) -->
+  <g transform="translate(181, 48)">
+    <rect width="1019" height="632" fill="#F8FAFC"/>
+
+    <!-- Dashboard Title -->
+    <text x="36" y="44" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="22">Painel</text>
+    <text x="36" y="66" fill="#64748B" font-family="'Inter', sans-serif" font-size="12">O que precisa da sua atenção agora — caixa, estoque, fiado e o movimento do dia.</text>
+
+    <!-- Situação do Dia Header -->
+    <text x="36" y="112" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14">Situação do dia</text>
+    <text x="36" y="130" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Alertas operacionais para agir rápido</text>
+
+    <!-- 4 Alert Cards -->
+    <g transform="translate(36, 142)">
+      <!-- Caixa Aberto -->
+      <rect width="215" height="74" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <circle cx="28" cy="37" r="16" fill="#DCFCE7"/>
+      <text x="22" y="43" fill="#16A34A" font-size="16">💵</text>
+      <text x="56" y="32" fill="#64748B" font-family="'Inter', sans-serif" font-size="10">Caixa</text>
+      <text x="56" y="49" fill="#16A34A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14">Aberto</text>
+      <text x="56" y="62" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9">Desde 08:30</text>
+
+      <!-- Estoque Crítico -->
+      <g transform="translate(230, 0)">
+        <rect width="215" height="74" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <circle cx="28" cy="37" r="16" fill="#FEF3C7"/>
+        <text x="21" y="43" fill="#D97706" font-size="15">📦</text>
+        <text x="56" y="32" fill="#64748B" font-family="'Inter', sans-serif" font-size="10">Estoque crítico</text>
+        <text x="56" y="49" fill="#D97706" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14">4 itens</text>
+        <text x="56" y="62" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9">abaixo do mínimo</text>
+      </g>
+
+      <!-- Validade -->
+      <g transform="translate(460, 0)">
+        <rect width="215" height="74" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <circle cx="28" cy="37" r="16" fill="#FEF3C7"/>
+        <text x="21" y="43" fill="#D97706" font-size="15">⏳</text>
+        <text x="56" y="32" fill="#64748B" font-family="'Inter', sans-serif" font-size="10">Validade</text>
+        <text x="56" y="49" fill="#D97706" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14">2 itens</text>
+        <text x="56" y="62" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9">vencem em breve</text>
+      </g>
+
+      <!-- Fiado em atraso -->
+      <g transform="translate(690, 0)">
+        <rect width="245" height="74" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <circle cx="28" cy="37" r="16" fill="#FEE2E2"/>
+        <text x="21" y="43" fill="#DC2626" font-size="15">👥</text>
+        <text x="56" y="32" fill="#64748B" font-family="'Inter', sans-serif" font-size="10">Fiado em atraso</text>
+        <text x="56" y="49" fill="#DC2626" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14">2 vendas</text>
+        <text x="56" y="62" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9">a cobrar no WhatsApp</text>
+      </g>
+    </g>
+
+    <!-- Vendas Header -->
+    <g transform="translate(36, 245)">
+      <text x="0" y="0" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14">Vendas</text>
+      <text x="0" y="16" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Quanto entrou, o que gira e como o cliente paga</text>
+      <text x="860" y="6" fill="#D97706" font-family="'Inter', sans-serif" font-weight="600" font-size="11">Ver relatórios →</text>
+    </g>
+
+    <!-- 4 Revenue Cards -->
+    <g transform="translate(36, 275)">
+      <!-- Hoje -->
+      <rect width="220" height="95" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <text x="18" y="24" fill="#64748B" font-family="'Inter', sans-serif" font-size="10" font-weight="700">HOJE</text>
+      <text x="18" y="52" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="19">R$ 1.148,26</text>
+      <text x="18" y="74" fill="#64748B" font-family="'Inter', sans-serif" font-size="10">19 vendas • lucro R$ 355,39</text>
+
+      <!-- Ontem -->
+      <g transform="translate(235, 0)">
+        <rect width="220" height="95" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <text x="18" y="24" fill="#64748B" font-family="'Inter', sans-serif" font-size="10" font-weight="700">ONTEM</text>
+        <text x="18" y="52" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="19">R$ 1.847,50</text>
+        <text x="18" y="74" fill="#16A34A" font-family="'Inter', sans-serif" font-size="10">↗ +14,6% vs mesmo dia</text>
+      </g>
+
+      <!-- Mês Até Hoje (Dark highlight card) -->
+      <g transform="translate(470, 0)">
+        <rect width="230" height="95" rx="12" fill="#0F172A" stroke="#1E293B"/>
+        <text x="18" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10" font-weight="700">MÊS ATÉ HOJE</text>
+        <text x="18" y="52" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="20">R$ 41.097,60</text>
+        <text x="18" y="74" fill="#38BDF8" font-family="'Inter', sans-serif" font-size="10">648 vendas • ticket R$ 63,42</text>
+      </g>
+
+      <!-- Lucro do Mês -->
+      <g transform="translate(715, 0)">
+        <rect width="220" height="95" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <text x="18" y="24" fill="#64748B" font-family="'Inter', sans-serif" font-size="10" font-weight="700">LUCRO DO MÊS</text>
+        <text x="18" y="52" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="19">R$ 12.822,45</text>
+        <text x="18" y="74" fill="#64748B" font-family="'Inter', sans-serif" font-size="10">margem de 31,2% sobre produtos</text>
+      </g>
+    </g>
+
+    <!-- Chart: Vendas por dia -->
+    <g transform="translate(36, 395)">
+      <rect width="935" height="190" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <text x="24" y="28" fill="#64748B" font-family="'Inter', sans-serif" font-size="10" font-weight="700">ÚLTIMOS 30 DIAS</text>
+      <text x="24" y="48" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14">Vendas por dia</text>
+
+      <text x="800" y="36" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Total: <tspan fill="#0F172A" font-weight="700">R$ 11.817,90</tspan></text>
+
+      <!-- Bar Chart Columns -->
+      <g transform="translate(40, 80)">
+        <!-- Horizontal grid line -->
+        <line x1="0" y1="70" x2="850" y2="70" stroke="#E2E8F0"/>
+        
+        <!-- Bars -->
+        <rect x="20" y="30" width="22" height="40" rx="4" fill="#2563EB"/>
+        <rect x="60" y="45" width="22" height="25" rx="4" fill="#2563EB"/>
+        <rect x="100" y="20" width="22" height="50" rx="4" fill="#2563EB"/>
+        <rect x="140" y="35" width="22" height="35" rx="4" fill="#2563EB"/>
+        <rect x="180" y="50" width="22" height="20" rx="4" fill="#2563EB"/>
+        <rect x="220" y="15" width="22" height="55" rx="4" fill="#2563EB"/>
+        <rect x="260" y="28" width="22" height="42" rx="4" fill="#2563EB"/>
+        <rect x="300" y="40" width="22" height="30" rx="4" fill="#2563EB"/>
+        <rect x="340" y="10" width="22" height="60" rx="4" fill="#1D4ED8"/>
+        <!-- Callout on peak -->
+        <rect x="325" y="-12" width="52" height="18" rx="4" fill="#0F172A"/>
+        <text x="330" y="0" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="9" font-weight="bold">R$ 1.980</text>
+
+        <rect x="380" y="22" width="22" height="48" rx="4" fill="#2563EB"/>
+        <rect x="420" y="38" width="22" height="32" rx="4" fill="#2563EB"/>
+        <rect x="460" y="18" width="22" height="52" rx="4" fill="#2563EB"/>
+        <rect x="500" y="48" width="22" height="22" rx="4" fill="#2563EB"/>
+        <rect x="540" y="25" width="22" height="45" rx="4" fill="#2563EB"/>
+        <rect x="580" y="35" width="22" height="35" rx="4" fill="#2563EB"/>
+        <rect x="620" y="15" width="22" height="55" rx="4" fill="#2563EB"/>
+        <rect x="660" y="30" width="22" height="40" rx="4" fill="#2563EB"/>
+        <rect x="700" y="20" width="22" height="50" rx="4" fill="#2563EB"/>
+        <rect x="740" y="42" width="22" height="28" rx="4" fill="#2563EB"/>
+        <rect x="780" y="12" width="22" height="58" rx="4" fill="#2563EB"/>
+        <rect x="820" y="25" width="22" height="45" rx="4" fill="#2563EB"/>
+      </g>
+    </g>
+  </g>
+</svg>

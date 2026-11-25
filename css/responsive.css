@@ -1,0 +1,576 @@
+/**
+ * PDV ATYLUS — Responsive Stylesheet
+ * Fully optimized for Mobile (Android & iOS), Tablets & Desktops
+ */
+
+/* ==========================================================================
+   MOBILE NAVIGATION DRAWER & OVERLAY
+   ========================================================================== */
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition);
+}
+
+.mobile-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 290px;
+  max-width: 85vw;
+  height: 100%;
+  background: #ffffff;
+  border-left: 1px solid var(--border-light);
+  z-index: 1200;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav-drawer.active {
+  right: 0;
+}
+
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.mobile-drawer-close {
+  color: var(--text-main);
+  font-size: 1.5rem;
+  padding: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.mobile-drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.mobile-drawer-links a {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-drawer-links a:hover {
+  color: var(--blue-primary);
+}
+
+.mobile-drawer-cta {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+/* ==========================================================================
+   BREAKPOINTS
+   ========================================================================== */
+
+/* 1. Tablets & Small Laptops (max-width: 1120px) */
+@media (max-width: 1120px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .dashboard-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .segments-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .modules-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 640px;
+    margin: 40px auto 0;
+    gap: 20px;
+  }
+
+  .footer-columns-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* 2. Tablets & Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Container Padding */
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* Header */
+  .nav-container {
+    height: 66px;
+  }
+
+  .brand-logo-svg {
+    height: 38px;
+    max-width: 175px;
+  }
+
+  .btn-blue-header {
+    padding: 8px 16px;
+    font-size: 0.84rem;
+  }
+
+  .top-promo-bar {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  /* Section Headers */
+  .section-centered-header {
+    margin-bottom: 36px;
+  }
+
+  .section-centered-header .title-large {
+    font-size: 1.95rem;
+    line-height: 1.25;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 32px 0 48px;
+  }
+
+  .hero-main-title {
+    font-size: 2.1rem;
+    line-height: 1.22;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero-checklist-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero-pricing-card {
+    padding: 26px 18px;
+    border-radius: 18px;
+  }
+
+  .hero-price-big {
+    font-size: 2.6rem;
+  }
+
+  /* Dashboard Showcase (Como Funciona) */
+  .dashboard-preview-section {
+    padding: 45px 0 65px;
+  }
+
+  .dashboard-mockup-frame {
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .dashboard-features-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .dash-feat-card {
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+
+  .dash-feat-card h4 {
+    font-size: 1.02rem;
+  }
+
+  .dash-feat-card p {
+    font-size: 0.86rem;
+  }
+
+  /* Antes e Depois */
+  .before-after-section {
+    padding: 55px 0 65px;
+  }
+
+  .before-after-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .before-card, .after-card {
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+
+  .before-card h3, .after-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .before-list-item, .after-list-item {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  /* O Sistema (Apresentação do App) */
+  .migration-section {
+    padding: 55px 0 65px;
+  }
+
+  .migration-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .migration-content h2 {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+
+  .migration-lead {
+    font-size: 0.98rem;
+    line-height: 1.55;
+    margin-bottom: 24px;
+  }
+
+  .migration-steps {
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  .migration-step {
+    gap: 12px;
+  }
+
+  .step-number {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+
+  .step-text {
+    font-size: 0.90rem;
+    line-height: 1.45;
+  }
+
+  .migration-image-wrap {
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Segmentos Atendidos */
+  .segments-section {
+    padding: 55px 0 65px;
+  }
+
+  .segments-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .segment-card {
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+
+  .segment-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .segment-card p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .segment-btn-toggle {
+    min-height: 44px;
+    font-size: 0.90rem;
+    padding: 8px 0;
+  }
+
+  .segment-card.active .segment-info-drawer {
+    max-height: 1200px;
+    margin-top: 14px;
+    padding-top: 14px;
+  }
+
+  .segment-workflow-title {
+    font-size: 0.80rem;
+  }
+
+  .segment-step-item {
+    font-size: 0.84rem;
+    gap: 8px;
+  }
+
+  .segment-step-badge {
+    width: 22px;
+    height: 22px;
+    font-size: 0.75rem;
+  }
+
+  .segment-hardware-badge {
+    font-size: 0.76rem;
+    padding: 8px 10px;
+  }
+
+  .segment-cta-btn {
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Módulos Opcionais */
+  .modules-section {
+    padding: 55px 0 65px;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 32px;
+  }
+
+  .module-card {
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+
+  /* Depoimentos */
+  .testimonials-section {
+    padding: 55px 0 65px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .testimonial-card {
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+
+  /* Oferta & Teste Grátis */
+  .offer-section {
+    padding: 55px 0 65px;
+  }
+
+  .offer-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .offer-card-left, .offer-card-right {
+    padding: 26px 18px;
+    border-radius: 18px;
+  }
+
+  .price-main-val {
+    font-size: 2.6rem;
+  }
+
+  .offer-payment-trust-icons {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 55px 0 65px;
+  }
+
+  .faq-list {
+    gap: 12px;
+  }
+
+  .faq-item-box {
+    border-radius: 14px;
+  }
+
+  .faq-btn {
+    padding: 16px 16px;
+    font-size: 0.92rem;
+  }
+
+  .faq-content-answer {
+    padding: 0 16px 16px;
+    font-size: 0.88rem;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 50px 0 25px;
+  }
+
+  .footer-columns-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    font-size: 0.82rem;
+  }
+
+  /* Floating WhatsApp */
+  .whatsapp-floating-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .whatsapp-floating-btn svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* 3. Small Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Container Edge Padding */
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  /* Header */
+  .nav-container {
+    height: 60px;
+    gap: 8px;
+  }
+
+  .brand-logo-svg {
+    height: 34px;
+    max-width: 145px;
+  }
+
+  .btn-blue-header {
+    padding: 7px 11px;
+    font-size: 0.78rem;
+  }
+
+  .btn-text-desktop {
+    display: none;
+  }
+
+  .btn-text-mobile {
+    display: inline;
+  }
+
+  /* Titles */
+  .hero-main-title {
+    font-size: 1.80rem;
+  }
+
+  .hero-price-big {
+    font-size: 2.3rem;
+  }
+
+  .section-centered-header .title-large {
+    font-size: 1.70rem;
+  }
+
+  .migration-content h2 {
+    font-size: 1.65rem;
+  }
+
+  /* Buttons & Action Controls */
+  .btn-blue-buy {
+    min-height: 48px;
+    font-size: 0.95rem;
+  }
+
+  .btn-download-blue, .btn-download-light, .btn-download-green, .btn-download-dark {
+    min-height: 44px;
+    font-size: 0.84rem;
+  }
+
+  /* Android & iPhone Download Grid Stack */
+  .download-step-box div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  /* Module Card Price Wrap */
+  .module-price-divider {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .module-pill-action-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 720" fill="none">
+  <defs>
+    <filter id="paperShadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Thermal Paper Background -->
+  <g filter="url(#paperShadow)">
+    <path d="M 10 20 
+             Q 15 15, 20 20 T 30 20 T 40 20 T 50 20 T 60 20 T 70 20 T 80 20 T 90 20 T 100 20 T 110 20 T 120 20 T 130 20 T 140 20 T 150 20 T 160 20 T 170 20 T 180 20 T 190 20 T 200 20 T 210 20 T 220 20 T 230 20 T 240 20 T 250 20 T 260 20 T 270 20 T 280 20 T 290 20 T 300 20 T 310 20 T 320 20 T 330 20 T 340 20 T 350 20 T 360 20 T 370 20 T 380 20 T 390 20 T 400 20 T 410 20
+             L 410 680
+             Q 405 685, 400 680 T 390 680 T 380 680 T 370 680 T 360 680 T 350 680 T 340 680 T 330 680 T 320 680 T 310 680 T 300 680 T 290 680 T 280 680 T 270 680 T 260 680 T 250 680 T 240 680 T 230 680 T 220 680 T 210 680 T 200 680 T 190 680 T 180 680 T 170 680 T 160 680 T 150 680 T 140 680 T 130 680 T 120 680 T 110 680 T 100 680 T 90 680 T 80 680 T 70 680 T 60 680 T 50 680 T 40 680 T 30 680 T 20 680 T 10 680 Z" 
+          fill="#FAF8F5" stroke="#E2E8F0"/>
+  </g>
+
+  <!-- Receipt Content (Monospace thermal printer styling) -->
+  <g font-family="'Courier New', Courier, monospace" fill="#1E293B">
+    <!-- Header -->
+    <text x="210" y="60" text-anchor="middle" font-weight="900" font-size="18">MERCADINHO BOM PREÇO</text>
+    <text x="210" y="80" text-anchor="middle" font-size="11">CNPJ: 12.345.678/0001-90</text>
+    <text x="210" y="96" text-anchor="middle" font-size="11">RUA DO COMÉRCIO, 100 - CENTRO</text>
+    <text x="210" y="112" text-anchor="middle" font-size="11">TEL: (21) 97315-8363</text>
+    
+    <text x="210" y="132" text-anchor="middle" font-size="11">------------------------------------------</text>
+    <text x="210" y="148" text-anchor="middle" font-weight="bold" font-size="13">CUPOM NÃO FISCAL</text>
+    <text x="210" y="164" text-anchor="middle" font-size="11">------------------------------------------</text>
+    
+    <!-- Sale Info -->
+    <text x="35" y="184" font-size="10.5">DATA: 23/11/2026 14:32:10</text>
+    <text x="260" y="184" font-size="10.5">DOC: 001042</text>
+    <text x="35" y="200" font-size="10.5">OPERADOR: CAIXA 01 (LUANA)</text>
+    <text x="35" y="216" font-size="10.5">CLIENTE: CONSUMIDOR FINAL</text>
+
+    <text x="210" y="234" text-anchor="middle" font-size="11">==========================================</text>
+    <text x="35" y="250" font-weight="bold" font-size="11">ITEM CÓDIGO  DESCRIÇÃO        QTDxUNIT   TOTAL</text>
+    <text x="210" y="262" text-anchor="middle" font-size="11">------------------------------------------</text>
+
+    <!-- Items -->
+    <text x="35" y="280" font-size="11">001 78949000 COCA-COLA 2L</text>
+    <text x="250" y="295" font-size="10.5">2 un x 9.50</text>
+    <text x="340" y="295" font-weight="bold" font-size="11">19.00</text>
+
+    <text x="35" y="318" font-size="11">002 78910003 CAFE TRADIC 500G</text>
+    <text x="250" y="333" font-size="10.5">1 un x 18.90</text>
+    <text x="340" y="333" font-weight="bold" font-size="11">18.90</text>
+
+    <text x="35" y="356" font-size="11">003 78960012 ARROZ BRANCO 5KG</text>
+    <text x="250" y="371" font-size="10.5">1 un x 26.90</text>
+    <text x="340" y="371" font-weight="bold" font-size="11">26.90</text>
+
+    <text x="35" y="394" font-size="11">004 78910001 BISC RECHEADO</text>
+    <text x="250" y="409" font-size="10.5">3 un x 3.90</text>
+    <text x="340" y="409" font-weight="bold" font-size="11">11.70</text>
+
+    <text x="35" y="432" font-size="11">005 78910102 SABONETE SUAVE</text>
+    <text x="250" y="447" font-size="10.5">2 un x 4.00</text>
+    <text x="340" y="447" font-weight="bold" font-size="11"> 8.00</text>
+
+    <text x="210" y="468" text-anchor="middle" font-size="11">------------------------------------------</text>
+    
+    <!-- Totals -->
+    <text x="35" y="490" font-size="12">TOTAL DE ITENS:</text>
+    <text x="345" y="490" font-weight="bold" font-size="12">5</text>
+
+    <text x="35" y="512" font-size="12">SUBTOTAL:</text>
+    <text x="330" y="512" font-size="12">R$ 84.50</text>
+
+    <text x="35" y="534" font-size="12">DESCONTO:</text>
+    <text x="340" y="534" font-size="12">R$ 0.00</text>
+
+    <text x="35" y="560" font-weight="900" font-size="16">TOTAL A PAGAR:      R$ 84.50</text>
+    <text x="210" y="576" text-anchor="middle" font-size="11">------------------------------------------</text>
+
+    <!-- Payment info -->
+    <text x="35" y="596" font-size="11">FORMA PAGAMENTO:</text>
+    <text x="240" y="596" font-weight="bold" font-size="11">PIX DINÂMICO</text>
+    <text x="35" y="612" font-size="10">AUTORIZAÇÃO: ATYLUS-PX-982187</text>
+
+    <!-- Footer Barcode & Powered By -->
+    <g transform="translate(70, 622)">
+      <!-- Mini Barcode -->
+      <rect x="0" y="0" width="3" height="24" fill="#000"/>
+      <rect x="5" y="0" width="1" height="24" fill="#000"/>
+      <rect x="8" y="0" width="4" height="24" fill="#000"/>
+      <rect x="15" y="0" width="2" height="24" fill="#000"/>
+      <rect x="19" y="0" width="5" height="24" fill="#000"/>
+      <rect x="27" y="0" width="2" height="24" fill="#000"/>
+      <rect x="32" y="0" width="4" height="24" fill="#000"/>
+      <rect x="38" y="0" width="2" height="24" fill="#000"/>
+      <rect x="42" y="0" width="1" height="24" fill="#000"/>
+      <rect x="46" y="0" width="4" height="24" fill="#000"/>
+      <rect x="53" y="0" width="3" height="24" fill="#000"/>
+      <rect x="60" y="0" width="2" height="24" fill="#000"/>
+      <rect x="65" y="0" width="5" height="24" fill="#000"/>
+      <rect x="73" y="0" width="1" height="24" fill="#000"/>
+      <rect x="77" y="0" width="3" height="24" fill="#000"/>
+      <rect x="84" y="0" width="4" height="24" fill="#000"/>
+      <rect x="91" y="0" width="2" height="24" fill="#000"/>
+      <rect x="96" y="0" width="5" height="24" fill="#000"/>
+      <rect x="104" y="0" width="2" height="24" fill="#000"/>
+      <rect x="109" y="0" width="3" height="24" fill="#000"/>
+      <rect x="115" y="0" width="1" height="24" fill="#000"/>
+      <rect x="119" y="0" width="4" height="24" fill="#000"/>
+      <rect x="126" y="0" width="2" height="24" fill="#000"/>
+      <rect x="132" y="0" width="5" height="24" fill="#000"/>
+      <rect x="140" y="0" width="3" height="24" fill="#000"/>
+      <rect x="146" y="0" width="2" height="24" fill="#000"/>
+      <rect x="151" y="0" width="4" height="24" fill="#000"/>
+      <rect x="158" y="0" width="3" height="24" fill="#000"/>
+      <rect x="165" y="0" width="2" height="24" fill="#000"/>
+      <rect x="170" y="0" width="5" height="24" fill="#000"/>
+      <rect x="178" y="0" width="2" height="24" fill="#000"/>
+      <rect x="183" y="0" width="4" height="24" fill="#000"/>
+      <rect x="190" y="0" width="3" height="24" fill="#000"/>
+      <rect x="196" y="0" width="2" height="24" fill="#000"/>
+      <rect x="201" y="0" width="5" height="24" fill="#000"/>
+      <rect x="210" y="0" width="3" height="24" fill="#000"/>
+      <rect x="216" y="0" width="2" height="24" fill="#000"/>
+      <rect x="222" y="0" width="4" height="24" fill="#000"/>
+      <rect x="229" y="0" width="2" height="24" fill="#000"/>
+      <rect x="234" y="0" width="5" height="24" fill="#000"/>
+      <rect x="242" y="0" width="3" height="24" fill="#000"/>
+      <rect x="248" y="0" width="2" height="24" fill="#000"/>
+      <rect x="253" y="0" width="4" height="24" fill="#000"/>
+      <rect x="260" y="0" width="3" height="24" fill="#000"/>
+      <rect x="266" y="0" width="2" height="24" fill="#000"/>
+    </g>
+
+    <text x="210" y="660" text-anchor="middle" font-weight="bold" font-size="10.5">SISTEMA EMISSOR: PDV ATYLUS</text>
+    <text x="210" y="674" text-anchor="middle" font-size="9.5">www.pdvatylus.com.br • WhatsApp: (21) 97315-8363</text>
+  </g>
+</svg>
